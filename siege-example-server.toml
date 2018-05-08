@@ -1,0 +1,15 @@
+
+# PKCS #8 key path (ed25519)
+pkcs8_key_path = "./pkcs8.der"
+
+# Expected number of clients.  If this number is exceeded, a hashmap will be
+# reallocated and rehashed (a hiccup in performance)
+num_expected_clients = 4
+
+# Socket to bind to
+local_socket_addr = "0.0.0.0:5555"
+
+# Size of packet message-passing buffer (count of packets, not bytes). If the program
+# dies with a particular error indicating the buffer was full, then maybe this should
+# be increased.
+packet_message_buffer_size = 64

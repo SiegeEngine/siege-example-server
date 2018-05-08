@@ -1,0 +1,26 @@
+[package]
+name = "siege-example-server"
+version = "0.1.0"
+authors = ["Mike Dilger <mike@optcomp.nz>"]
+description = "Siege Example Server Component"
+repository = "https://github.com/SiegeEngine/siege-example-server"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+bincode = "1.0"
+rand = "0.4"
+ring = "0.12"
+untrusted = "0.5"
+log = "0.4"
+env_logger = "0.4"
+toml = "0.4"
+chashmap = "2.2"
+crossbeam = "0.3"
+mio = "0.6"
+chrono = { version = "0.4", features = [ "serde" ] }
+error-chain = "0.11"
+siege-net = { git = "https://github.com/SiegeEngine/siege-net" }
+siege-example-net = { git = "https://github.com/SiegeEngine/siege-example-net" }
